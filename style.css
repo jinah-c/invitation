@@ -1,0 +1,596 @@
+/* 한자 미포함
+@font-face {
+    font-family: 'MapoGoldenPier';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'Shilla_CultureB-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/Shilla_CultureB-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'KBIZHanmaumMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KBIZHanmaumMyungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dokrip';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Dokrip.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+:root{
+    --font-point: 'Shilla_CultureB-Bold';
+    --font-nomal: 'KBIZHanmaumMyungjo';
+
+}
+
+* {
+    font-family: var(--font-nomal);
+    font-weight: bold;
+    
+    }
+
+
+html {
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background-image: url(./greenBG.jpg);
+    background-position: center;
+    background-size:cover;
+    /* background-color: #2a3e3a;
+    background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png"); */
+    z-index: -2;
+}
+
+body {
+    margin: 2rem auto;
+    max-width: 600px;
+    /* background-image: url(./greenBG.jpg); */
+    width: 600px;
+    height: auto;
+    z-index: -2;
+}
+
+
+
+    /* 배경데코  */
+
+    .deco-box{
+        width: 100vw;
+        background-color: #2a3e3a;
+    } 
+
+    .deco01 {
+        position: fixed;
+        width:20rem;
+        bottom: -18px;
+        left: -25px;
+        z-index: -1;        
+    }
+
+    .deco02 {
+        position: absolute;
+        width:5rem;
+        top: 15rem;
+        left:-2rem;
+
+    }
+
+    .deco03 {
+        position: absolute;
+        width:18em;
+        right: -12px;
+        top:-5px;
+
+    }
+
+
+
+
+/* start */
+
+    .title__text{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .title__text h1{
+        font-family: var(--font-point);
+        font-size: 6.0rem;
+        line-height: 6.4rem;
+        text-align: center;
+        word-break: keep-all;
+        color: #ba7b36;
+
+    }
+
+    .title__text h2{
+        font-family: var(--font-point);
+        font-size: 4.8rem;
+        text-align: center;
+        word-break: keep-all;
+        line-height: 5.8rem;
+        color: #475576;
+    }
+
+    .title__text h3{
+        font-family: var(--font-point);
+        font-size: 3.8rem;
+        text-align: center;
+        word-break: keep-all;
+        line-height: 5.8rem;
+        color: #7d89a0;
+        padding-left: 0.5rem;
+    }
+
+
+    .contaienr__bg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 600px;
+        z-index: 5;
+    }
+
+
+    .container__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 82%;
+        height: auto;
+        background-image: url(./paper_bg.jpg);
+        border-radius: 0.2rem;
+        border: 2px solid;
+        border-image: linear-gradient(to right bottom, #e6cfa3, #ba7b36);
+        border-image-slice: 1;
+        margin-top: 2.5rem;
+        margin-bottom: 5rem;
+        /* z-index: 1; */
+    }
+
+
+    .title__text {
+        width: 80%;
+        margin-top: 5.65rem;
+        margin-bottom: 2.2rem;
+    }
+
+
+    /* 초대 인사말 */
+    .detail__text {
+        width: 70%;
+        text-align: center;
+        word-break: keep-all;
+        font-size: 1.2em;
+        letter-spacing: -0.082em;
+        line-height: 1.7em;
+        color: #505c78;
+        margin-bottom: 1rem;
+
+    }
+
+    .name__text {
+        font-size: 1.36rem;
+        margin-bottom: 2.9rem;
+        color: #494776;
+    }
+
+
+    /* 축하연 날짜 */
+    .date__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3.5rem;
+    }
+
+
+    .circle {
+        width: 0.36rem;
+        height: 0.36rem;
+        background-color: #81a897;
+        border-radius: 100%;
+        margin: 0 0.7rem;
+    }
+
+    .date__box h3 {
+        color:  #505c78;
+        font-size: 1.1rem;
+    }
+
+    .date__box h2 {
+        font-size: 1.8rem;
+        color: #d89c44;
+    }
+
+    .adderss__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.3rem;
+        
+    }
+
+    .adderss__box h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: -0.062em;
+        line-height: 1.68em;
+        word-spacing: -0.0375em;
+        color: #494776;
+    }
+
+    .adderss__box p {
+        width: 70%;
+        text-align: center;
+        word-break: keep-all;
+        font-size: 1.05em;
+        letter-spacing: -0.062em;
+        line-height: 1.42em;
+        word-spacing: -0.0375em;
+        color: #505c78;
+        margin-bottom: 1rem;
+    }
+
+
+
+
+    .call__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5rem;
+        margin-top: 2rem;
+    }
+
+
+    .call__box a {
+        color: #d89c44;
+        font-size: 1.0rem;
+        letter-spacing: 0.056rem;
+    }
+
+    .material-symbols-outlined {
+        margin-right: 0.2rem;
+        color: #d89c44;
+    }
+
+
+
+
+
+
+    /*********** 
+    ************ 
+    ************  add *********** */
+
+    .add {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .add .line {
+        width: 6rem;
+        height: 2px;
+        background-color: #81a897af;
+        border-radius: 1rem;
+        margin: 2rem 0 3rem 0;
+    } */
+
+    .add .deco04{
+        width: 42px;
+        height: 50px;
+        background-image: url(./gr___005.png); 
+        background-size: contain;
+        margin-bottom: 5rem;
+        margin-top: 1.5rem;
+    }
+
+    .add h3 {
+        font-family: 'Dokrip';
+        font-size: 1.6rem;
+        color: #505c78;
+        margin-bottom: 2rem;
+    }
+
+
+
+
+
+
+
+/*=============  MEDIA QUERIES (SMALL DEVICES)Mobile  =============*/
+/* 최대너비 600px으로 지정 */
+
+
+@media screen and (max-width: 600px) {
+
+    html {
+        width: 100%;
+        height: 100%;
+        background-image: url(./greenBG.jpg);
+        background-position: center;
+        background-size:cover;
+        z-index: -2;
+    }
+
+    body {
+        max-width: 600px;
+        /* background-image: url(./greenBG.jpg); */
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+    }
+
+
+
+    /* 배경데코  */
+
+     .deco-box{
+        width: 100vw;
+        background-color: #2a3e3a;
+    } 
+
+    .deco01 {
+        position: fixed;
+        width:15rem;
+        bottom: -18px;
+        left: -28px;
+        z-index: -1;        
+    }
+
+    .deco02 {
+        position: absolute;
+        top: 24rem;
+        left:-2rem;
+        width:5rem;
+
+    }
+
+    .deco03 {
+        position: absolute;
+        width:14em;
+        right: -12px;
+        top:-5px;
+
+    }
+
+
+
+
+/* start */
+
+    .contaienr__bg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        z-index: 5;
+    }
+
+    
+    .container__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        height: auto;
+        background-image: url(./paper_bg.jpg);
+        border-radius: 0.2rem;
+        border: 2px solid;
+        border-image: linear-gradient(to right bottom, #e6cfa3, #ba7b36);
+        border-image-slice: 1;
+        margin-top: 1.4rem;
+        margin-bottom: 3.5rem;
+        /* z-index: 1; */
+    }
+
+
+    /* 메인초대글 */
+    .title__text h1{
+        font-family: var(--font-point);
+        font-size: 4.8rem;
+        line-height: 5.3rem;
+        text-align: center;
+        word-break: keep-all;
+        color: #ba7b36;
+
+    }
+
+    .title__text h2{
+        font-family: var(--font-point);
+        font-size: 3.5rem;
+        line-height: 3.8rem;
+        text-align: center;
+        word-break: keep-all;
+        color: #475576;
+    }
+
+    .title__text h3{
+        font-family: var(--font-point);
+        font-size: 2.6rem;
+        text-align: center;
+        word-break: keep-all;
+        line-height: 3.8rem;
+        color: #7d89a0;
+        padding-left: 0.5rem;
+    }
+
+
+
+
+    .title__text {
+        width: 82%;
+        margin-top: 5.4rem;
+        margin-bottom: 2.2rem;
+    }
+
+
+    /* 초대 인사말 */
+    .detail__text {
+        width: 74%;
+        text-align: center;
+        word-break: keep-all;
+        font-size: 1.0em;
+        letter-spacing: -0.062em;
+        line-height: 1.7em;
+        color: #505c78;
+        margin-bottom: 0.9rem;
+    }
+
+    .name__text {
+        font-size: 1.2rem;
+        margin-bottom: 2.0rem;
+        color: #494776;
+    }
+
+
+    /* 축하연 날짜 */
+    .date__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.0rem;
+    }
+
+
+    .circle {
+        width: 0.36rem;
+        height: 0.36rem;
+        background-color: #81a897;
+        border-radius: 100%;
+        margin: 0 0.7rem;
+    }
+
+    .date__box h3 {
+        color: #494776;
+    }
+
+    .date__box h2 {
+        font-size: 1.5rem;
+        color: #d89c44;
+    }
+
+    .add .deco04{
+        margin-bottom: 2rem;
+    }
+
+    .adderss__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.3rem;
+    }
+
+    .adderss__box h3 {
+        font-size: 1.2rem;
+        letter-spacing: -0.062em;
+        line-height: 1.68em;
+        word-spacing: -0.0375em;
+        color: #494776;
+    }
+
+    .adderss__box p {
+        width: 70%;
+        text-align: center;
+        word-break: keep-all;
+        font-size: 1.0rem;
+        letter-spacing: -0.062em;
+        line-height: 1.42em;
+        word-spacing: -0.0375em;
+        color: #505c78;
+        margin-bottom: 1.0rem;
+    }
+
+    .call__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+        padding-bottom: 1rem;
+        margin-top: 1.45rem;
+    }
+
+
+    .call__box a {
+        color: #d89c44;
+    }
+
+    .material-symbols-outlined {
+        margin-right: 0.2rem;
+        color: #d89c44;
+    }
+
+
+
+
+
+
+    /*********** 
+    ************ 
+    ************  add *********** */
+
+    .add {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .add .line {
+        width: 6rem;
+        height: 2px;
+        background-color: #81a897af;
+        border-radius: 1rem;
+        margin: 2rem 0 3rem 0;
+    } */
+
+    .add .line{
+        width: 42px;
+        height: 50px;
+        background-image: url(./gr___005.png); 
+        background-size: contain;
+        margin-bottom: 2.8rem;
+        margin-top: 1.5rem;
+    }
+
+    .add h3 {
+        font-family: 'Dokrip';
+        font-size: 1.6rem;
+        color: #505c78;
+        margin-bottom: 1.2rem;
+    }
+
+
+
+
+}
