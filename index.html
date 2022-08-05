@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./main.js">
 
-    <meta property="og:title" content="축하연 초대장!">
-    <meta property="og:description" content="유재건님의 축하연에 초대합니다">
-    <meta property="og:image" content="./img.png">
+    <meta property="og:title" content="유재건님의 축하연에 초대합니다">
+    <meta property="og:description" content="2022년 10월 8일 (토) 6:00pm">
+    <meta property="og:image" content="./th.png">
 
     <!-- <link rel="shortcut icon" href="./fa.png" type="image/x-icon"> -->
 
@@ -27,14 +27,15 @@
     <container class="contaienr__bg">
 
         <div class="deco-box">
-            <img src="./gr__001.png" alt="" class="deco01">
-            <!-- <img src="./gr__002.png" alt="" class="deco02"> -->
-            <img src="./gr__003.png" alt="" class="deco03">
+            <img src="./gr__001.png" alt="" class="deco01 fade-in">
+            <img src="./gr__003.png" alt="" class="deco03 fade-in">
         </div>
 
         <div class="container__main">
-
-            <div class="title__text">
+            <!-- 
+             *****************   Title text  *******************
+            -->
+            <div class="title__text fade-in">
                 <h2>유재건<P>
                 </h2>
                 <h3>님의</h3>
@@ -42,18 +43,27 @@
                 <h2>에</h2>
                 <h2>초대합니다</h2>
             </div>
-            <!-- <img src="./gr__text.png" alt="유재건님의 축하연에 초대합니다" class="title__text"> -->
 
-            <p class="detail__text">저의 아버지 고리(鼓里)
+        
+            <!-- 
+             *****************   text   *******************
+            -->
+
+            <img src="./profileimg.png" alt="" class="profile__img fade-in">
+
+            <p class="detail__text fade-in">저의 아버지 고리(鼓里)<br>
                 유 재 건(그레고리오)의 산수(傘壽)(2020)와
                 자서전 출간을 기념하는 축하자리를 마련하여
                 모시고자 하오니<br>
                 부디 참석하여 주시기 바랍니다.
             </p>
+            
+            <h4 class="name__text fade-in">아들 유인우, 유인욱 올림</h4>
 
-            <h4 class="name__text">아들 유인우, 유인욱 올림</h4>
-
-            <div class="date__box">
+            <!-- 
+             *****************   date  *******************
+            -->
+            <div class="date__box fade-in">
                 <h3>2022</h3>
                 <div class="circle"></div>
                 <h2>10월 8일</h2>
@@ -62,20 +72,31 @@
             </div>
 
 
-            <div class="add">
+
+            <!-- 
+             *****************   line  *******************
+            -->
+            <div class="deco__line fade-in">
                 <div class="deco04"></div>
                 <!-- <h3>오시는 길</h3> -->
             </div>
 
+
+
+            <!-- 
+             *****************   Location  *******************
+            -->
             <div class="adderss__box">
                 <h2>오크우드 호텔 오크룸 돌</h2>
+                <div class="deco__05"></div>
                 <p class="address">
                     서울시 강남구 테헤란로 87길 46 오크우드 프리미어 코엑스 센터</p>
+                <h5>※ 무료주차 2시간 제공됩니다.</h5>
 
 
                 <!-- 카카오 지도 -->
                 <div id="daumRoughmapContainer1659595025339"
-                    class="root_daum_roughmap root_daum_roughmap_landing kakao__map" style="width:88%;">
+                    class="root_daum_roughmap root_daum_roughmap_landing kakao__map" style="width:88%; margin-bottom: 20px;">
                     <script charset="UTF-8" class="daum_roughmap_loader_script"
                         src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js">
                     </script>
@@ -90,28 +111,81 @@
                         }).render();
                     </script>
                 </div>
-
-
                 <!-- <img src="./map.png" alt="오크우드 호텔 지도 이미지" class="map__img">
                 <a href="https://naver.me/5JJVDjMj" class="naver__map" target="_blank">네이버지도</a> -->
 
 
 
-
-
-                <div class="call__box">
-                    <span class="material-symbols-outlined">
-                        call
-                    </span>
+            <!-- 
+             *****************   Call  *******************
+            -->
+                <div class="call__box fade-in">
+                    
                     <a href="tel:0234667000">
-                        02-3466-7000</a>
+                        <!-- <span class="material-symbols-outlined">
+                        call
+                    </span> -->
+                        오크우드호텔에 전화하기</a>
                 </div>
 
+
+
+                <div class="bank">
+                    <img src="./letter.png" alt="" class="bank__img">
+                    <h1>마음 전하실 곳</h1>
+                    
+                </div>
+    
+                <div class="bank__box">
+                    <div class="bank__list">
+                        <h6 class="bank__p">유재건</h6>
+                        <input id="code_html" class="bank__input" type="text" value="농협 11112509426" autocomplete="off" readonly=""> 
+                        <input class="copy__btn" type="button" value="복사" /> 
+                    </div>
+                    
+                    <!-- <input
+                    id="code_direct" type="text" value="족발" autocomplete="off" readonly=""> 
+                    <input type="button" value="복사" /> 
+                    <input
+                    id="code_reddit" type="text" value="수육" autocomplete="off" readonly=""> 
+                    <input type="button" value="복사" /> -->
+                </div>
+    
             </div>
     </container>
 
+  
+
+    
+    
+    <script>document.addEventListener(
+        "click", function(e) {
+              var t = e.target;  
+              var input = t.previousElementSibling;  
+              input.select();  //문자열 전체 선택  
+    document.execCommand("copy");  //복사  
+    document.getSelection().removeAllRanges();  //선택 영역 해제  
+    t.focus();  //input.select(); 때 옮겨진 포커스를 원래대로 돌린다  
+    alert('복사되었습니다, 감사합니다.');});</script>
 
 
+
+    
+<!-- <script>
+    function copy_to_clipboard() {
+    var copyText = document.getElementById('myInput');
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("Copy");
+    alert('복사되었습니다, 감사합니다.');
+} -->
+
+
+
+
+
+</script>
 </body>
 
 </html>
+
